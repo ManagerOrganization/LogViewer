@@ -30,15 +30,22 @@ It doesn't use xib files so both storyboard and the other will do.
 ## Adding the module to your iOS project
 
 1. First, copy the LogViewer directory to any place in your Xcode project.
-2. Second, copy the code below in AppDelegate.h and AppDelegate.m's `application:didFinishLaunchingWithOptions:`.
+2. Second, copy the code below in AppDelegate.h and AppDelegate.m.
 
 	AppDelegate.h
-	* Just add the instance variable.
+	* Just add the `#import` and instance variable.
 	
+	*#import*
+	<pre>
+	#import "LogViewer.h"</pre>
+	
+	*Instance variable*
 	<pre>
 	LogViewer *logViewer;</pre>
 
 	AppDelegate.m
+	* In `application:didFinishLaunchingWithOptions:`
+	
 	<pre>
 	logViewer = [LogViewer sharedManager];
     logViewer.frame = [UIScreen mainScreen].applicationFrame;
