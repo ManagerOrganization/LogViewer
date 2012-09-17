@@ -51,7 +51,7 @@ It doesn't use xib files so both storyboard and the other will do.
     logViewer.frame = [UIScreen mainScreen].applicationFrame;
     [self.window addSubview:logViewer];</pre>
 
-3. Latly, write the code like below to output log in LogViewer.
+3. Lastly, write the code like below to output log in LogViewer.
 
 	<pre>[logViewer log:@"applicationDidFinishLaunching"];</pre>
 
