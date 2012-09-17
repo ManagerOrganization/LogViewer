@@ -44,14 +44,14 @@ It doesn't use xib files so both storyboard and the other will do.
     logViewer.frame = [UIScreen mainScreen].applicationFrame;
     [self.window addSubview:logViewer];</pre>
 
-3. Write the code like below to output log in LogViewer.
+3. Latly, write the code like below to output log in LogViewer.
 
 	<pre>[logViewer log:@"applicationDidFinishLaunching"];</pre>
 
 
 ## How to use
 
-Just write code 3. above when you want to show your log on screen. On the screen, you can change the size with the right-bottom button, the position with the title bar. The bottom line, there shows the current mode. Tapping there you can switch the mode to info.plist viewer. Tap agin you return to log viewer.
+Just write code 3. above where you want to show your log on screen. On the screen, you can change the size with the right-bottom button, the position with the title bar. The bottom line, there shows the current mode. Tapping there you can switch the mode to info.plist viewer. Tap agin you return to log viewer.
 
 ## Sample application
 
